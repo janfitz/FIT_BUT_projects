@@ -1,5 +1,5 @@
 # File wrapper - wedi.sh
-Linux bash script as IOS 2015 project.
+Linux bash script as IOS 2015 project. Script can automatically choose file for editing and start default texteditor.
 
 # Fedora forum downloader - forum_downloader.py
 Python script as ISJ 2015 project which allows to download all posts from forum forum.fedora.cz into one file.

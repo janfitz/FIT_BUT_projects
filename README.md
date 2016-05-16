@@ -10,3 +10,6 @@ Program in C language which allows to count value of PI constant using iterative
 
 Example of program execution:
   - ./pi_fraction 100
+
+# Part of intepret of IFJ15 language - intepret.c
+One part of intepret of IFJ15 language as IFJ 2015 project

@@ -10,3 +10,6 @@ Program in C language which allows to count value of PI constant using iterative
 
 Example of program execution:
   - ./pi_fraction 100
+  
+# PHP sample - sample_code.php
+Sample php code as subfile of web project based on PHP a MySQL.

@@ -2,6 +2,7 @@
 // Author: Jan Fitz
 // Date: July 2016
 
+<?php
 $nazev = htmlspecialchars($_POST['nazev']);
 $popis = ($_POST['popis']);
 $zamereni = htmlspecialchars($_POST['zamereni']);
@@ -198,3 +199,4 @@ if ($objekt_vysledku) {
 else {
   $sucessful = 'Projekt se nepodařilo odeslat ke schválení, zkuste to prosím později, nebo nás kontaktuje<br>Zkontrolujte i formát zadaného emailu';
 }
+?>

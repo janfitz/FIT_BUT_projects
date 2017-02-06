@@ -13,3 +13,6 @@ Example of program execution:
   
 # PHP sample - sample_code.php
 Sample php code as subfile of web project based on PHP a MySQL.
+
+# Automatic bash testing - ifj_tester.sh
+Script for automatic testing of IFJ16 interpret output

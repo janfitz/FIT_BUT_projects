@@ -22,3 +22,9 @@ Sample php code as subfile of web project based on PHP a MySQL.
 
 # Automatic bash testing - ifj_tester.sh
 Script for automatic testing of IFJ16 interpret output
+
+# CS-Insolvency-script
+The python script for direct download of subject's records from czech Insolvency Register. Can easily automatic check new records by a lot of subject.
+
+### Using a beautiful soup library
+- Have two choices of downloading subject's data: RC (personal identification number), ICO (company's identification number) IDs of subjects that have to be checked are stored in the csv file which have to be in the same directory

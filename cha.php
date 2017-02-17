@@ -66,7 +66,7 @@ function scannig_dir(&$arr, $path, $content, $indent, $outputFile)
 			$arr[] = $filename;
 			$content = file_get_contents($filename, FILE_SKIP_EMPTY_LINES);
 
-			//Remove everything which is not needet from files
+			//Remove everything which is not necessary from files
 			$content = remove_the_rest($content);
 			
 			//Calling function for writing content into xml file

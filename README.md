@@ -1,3 +1,6 @@
+# C header files analyze - cha.php
+PHP script for analyzing C language header files. Output is a xml file contains all functions
+
 # File wrapper - wedi.sh
 Linux bash script as IOS 2015 project. Script can automatically choose file for editing and start default texteditor.
 

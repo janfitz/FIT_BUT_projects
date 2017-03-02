@@ -1,6 +1,6 @@
-#Prvni projekt IOS 2015
+#IOS Project
 #Wrapper - wedi
-#Jan Fitz, xfitzj00@stud.fit.vutbr.cz
+#Jan Fitz
 
 ###################
 # Pocatecni testy #

@@ -19,7 +19,7 @@
 # Iterative calculation - pi_fraction.c
 - Program in C language which allows to count value of PI constant using iterative calculation. The number of used iterations is passed to program through command line argument.
 
-Example of program execution:
+### Example of program execution:
   - `./pi_fraction 100`
 
 # C header files analyze - cha.php
@@ -36,7 +36,7 @@ Example of program execution:
 
 # Palindrom checker - palindrome.php
 - PHP class for solving palidrome problem (can operate with special characters as diacritic tec.)
-- Executeable as `php palindrome.php file.json||string`
+- Executeable as: `php palindrome.php file.json||string`
 
 ### Json file example
 ``` json

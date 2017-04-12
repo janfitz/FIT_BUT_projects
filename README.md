@@ -34,3 +34,18 @@ Sample php code as subfile of web project based on PHP a MySQL.
 # C header files analyze - cha.php
 PHP script for analyzing C language header files. Output is a xml file contains all functions
 
+# Palindrom checker - palindrome.php
+PHP class for solving palidrome problem (can operate with special characters as diacritic tec.)
+
+### Json file example
+``` json
+[
+  {
+    "string": "A do vlaku kukal Voda."
+  },
+  {
+    "string": "A láska? Jak sála!"
+  }
+]
+```
+

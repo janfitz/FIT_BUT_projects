@@ -35,8 +35,8 @@
 - PHP script for analyzing C language header files. Output is a xml file contains all functions
 
 # Palindrom checker - palindrome.php
-- PHP class for solving palidrome problem (can operate with special characters as diacritic tec.)
-- Executeable as: `php palindrome.php file.json||string`
+- PHP class for solving palidrome problem (can operate with special characters as diacritic etc.)
+- Executeable as: `php palindrome.php file.json || string`
 
 ### Json file example
 ``` json

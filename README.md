@@ -32,6 +32,7 @@
 - PHP class for encoding and decoding strings into morse alphabet with czech aid world
 
 ### Usage:
+  - `php morse.php "Hi I am Morse"`
   - `php morse.php Hi/I/am/Morse`
   - `php morse.php ..../..//..//.-/--//--/---/.-./..././`
 

@@ -28,6 +28,13 @@
 # Multiple SQL Query utility - multipleSqlQuery.php
 - PHP script for executing one SQL query over all databases on your server.
 
+# Morse alphabet decoder/encoder - morse.php
+- PHP class for encoding and decoding strings into morse alphabet with czech aid world
+
+### Usage:
+  - `php morse.php Hi/I/am/Morse`
+  - `php morse.php ..../..//..//.-/--//--/---/.-./..././`
+
 # PHP sample - sample_code.php
 - Sample php code as subfile of web project based on PHP a MySQL.
 

@@ -83,6 +83,7 @@ class Morse {
 	*
 	*/
   public function morseCompare($morseChar, $op) {
+    
     $alphabet = array(
        "A" => ".-", // Akát
        "B" => "-...", // Blýskavice

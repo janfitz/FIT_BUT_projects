@@ -20,18 +20,24 @@ class Morse {
 	public function morseEncode($morseString) {
 		echo 'Encoding string: '. $morseString . "\n";
 		$morseArray = str_split($morseString);
+		
 		echo 'Encoded string: ';
 		
       		foreach ($morseArray as $char) {
 			if($char != "/") {
-				$char = strtoupper($char);
-	       			echo $this->morseCompare($char, "encode"). "/";
+				if($char != " ") {
+					$char = strtoupper($char);
+				       echo $this->morseCompare($char, "encode"). "/";
+				}
+				else {
+					echo "/";
+				}
 			}
 			else {
 				echo "/";
 			}
       		}
-    	return 0;
+    		return 0;
  	}
 
  	 /**

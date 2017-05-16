@@ -1,6 +1,6 @@
 <?php
 /*
-  * Description: php class for encoding and decoding strings into morse alphabet with cyech aid world
+  * Description: php class for encoding and decoding strings into morse alphabet
   * Author: Jan Fitz
   * Date: 2017-05-16
   * Version: v1.0
@@ -14,72 +14,73 @@ class Morse {
 	*
 	* @param string morseString  	input string
 	*
-	* @return boolean				      exit status
+	* @return boolean		exit status
 	*
 	*/
 	public function morseEncode($morseString) {
-			echo 'Encoding string: '. $morseString . "\n";
-      $morseArray = str_split($morseString);
-
-			echo 'Encoded string: ';
-      foreach ($morseArray as $char) {
-				if($char != "/") {
-					$char = strtoupper($char);
-	        echo $this->morseCompare($char, "encode"). "/";
-				}
-				else {
-					echo "/";
-				}
-      }
+		echo 'Encoding string: '. $morseString . "\n";
+		$morseArray = str_split($morseString);
+		echo 'Encoded string: ';
+		
+      		foreach ($morseArray as $char) {
+			if($char != "/") {
+				$char = strtoupper($char);
+	       			echo $this->morseCompare($char, "encode"). "/";
+			}
+			else {
+				echo "/";
+			}
+      		}
     	return 0;
-  }
+ 	}
 
-  /**
+ 	 /**
 	* Decode morse string: morse -> text
 	*
 	* @param string morseString  	input morse string
 	*
-	* @return boolean 			      exit status
+	* @return boolean 		exit status
 	*
 	*/
 	public function morseDecode($morseString) {
-			$morseLength = strlen($morseString);
-		  $morseArray = str_split($morseString);
-      $morseConcat = "";
-			$counter = 0;
-			$echoSpace = false;
+		// Init values
+		$morseLength = strlen($morseString);
+		$morseArray = str_split($morseString);
+      		$morseConcat = "";
+		$counter = 0;
+		$echoSpace = false;
 
-			echo "\n". 'Decoded string: ';
+		echo "\n". 'Decoded string: ';
 
-      foreach ($morseArray as $char) {
-        $morseConcat .= $char;
-				if($echoSpace == true) {
-					echo " ";
-					$echoSpace = false;
-				}
-        if($char == "/") {
-					if($counter < $morseLength - 1) {
-						if($morseArray[$counter+1] == "/") {
-							$echoSpace = true;
-						}
+      		foreach ($morseArray as $char) {
+        		$morseConcat .= $char;
+			if($echoSpace == true) {
+				echo " ";
+				$echoSpace = false;
+			}
+        		if($char == "/") {
+				if($counter < $morseLength - 1) {
+					if($morseArray[$counter+1] == "/") {
+						$echoSpace = true;
 					}
-          $morseString = substr($morseConcat, 0, -1);
-          echo $this->morseCompare($morseString, "decode");
-          $morseConcat = "";
-        }
-				$counter++;
-      }
-			echo "\n";
-    	return true;
-  }
+				}
+          		$morseString = substr($morseConcat, 0, -1);
+          		echo $this->morseCompare($morseString, "decode");
+          		$morseConcat = "";
+       	 		}
+			$counter++;
+      		}
+		echo "\n";
+    		return true;
+  	}
 
 	/**
 	* Get key or value from morse alphaber array
 	*
-	* @param string morseChar  		input morse char
-	* @param string	op						type of operation: encode/decode
+	* @param string morseChar  	input morse char
+	* @param string	op		type of operation: encode/decode
 	*
-	* @return string 				      decode/encode string
+	* @return string 		decode/encode string
 	*
 	*/
   public function morseCompare($morseChar, $op) {
